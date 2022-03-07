@@ -15,10 +15,7 @@ try {
     echo 'Private key: '. $generateAddress->getPrivateKey().PHP_EOL;
     echo 'Public key: '. $generateAddress->getPublicKey().PHP_EOL;
     echo 'Is Validate: '. $isValid;
-
-    var_dump($generateAddress->getRawData());
-
-//    echo 'Raw data: '.$generateAddress->getRawData();
+    echo 'Raw data: '.$generateAddress->getRawData();
 
 } catch (\IEXBase\TronAPI\Exception\TronException $e) {
     echo $e->getMessage();
