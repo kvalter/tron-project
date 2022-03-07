@@ -1,6 +1,8 @@
 <?php
 include_once './vendor/autoload.php';
 
+header("Content-Type: text/plain; charset=utf-8");
+
 try {
     $tron = new \IEXBase\TronAPI\Tron();
 
@@ -14,7 +16,9 @@ try {
     echo 'Public key: '. $generateAddress->getPublicKey().PHP_EOL;
     echo 'Is Validate: '. $isValid;
 
-    echo 'Raw data: '.$generateAddress->getRawData();
+    var_dump($generateAddress->getRawData());
+
+//    echo 'Raw data: '.$generateAddress->getRawData();
 
 } catch (\IEXBase\TronAPI\Exception\TronException $e) {
     echo $e->getMessage();
