@@ -1,0 +1,6 @@
+{
+    "name": "kvalter/tron-project",
+    "require": {
+        "iexbase/tron-api": "^4.0"
+    }
+}
