@@ -14,4 +14,4 @@ try {
 
 $tron->setAddress('TNejb4QiC2crc5t7pCdFczquEbnK1uUXmC');
 $balance = $tron->getBalance(null, true);
-var_dump($cBalance);
+var_dump($balance);
