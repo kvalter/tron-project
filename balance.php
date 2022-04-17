@@ -11,7 +11,7 @@ try {
     exit($e->getMessage());
 }
 
+
 $tron->setAddress('TNejb4QiC2crc5t7pCdFczquEbnK1uUXmC');
-$contract = $tron->contract('TR7NHqjeKQxGTCi8q8ZY4pL8otSzgjLj6t');
-$cBalance = $contract->balanceOf($tron->getAddress()['base58']);
+$balance = $tron->getBalance(null, true);
 var_dump($cBalance);
